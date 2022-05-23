@@ -77,6 +77,7 @@ export const Formulario = ({setPacientes, pacientes, paciente,setPaciente}) => {
             <h1 className=' text-3xl text-center font-bold text-white '>Formulario</h1>
             {error && <p className=' grid text-red-600 font-semibold  justify-center my-2 '> Debes llenar todos los campos</p>}
             <form className='container mx-2 text-yellow-100 font-semibold' onSubmit={validarFormulario}>
+            <p className='text-center text-xl mt-5'>Ingrese la <span className=' text-blue-100 font-bold'> Informacion del Paciente </span></p>
                 <div>
                     <label htmlFor="nombrePaciente">Nombre Paciente </label>
                     <input type="text" id= 'nombre' className=' block w-full rounded-md text-gray-800 px-2' placeholder=' Nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />
