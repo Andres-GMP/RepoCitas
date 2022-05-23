@@ -76,7 +76,7 @@ export const Formulario = ({setPacientes, pacientes, paciente,setPaciente}) => {
         <div className='bg-zinc-900 rounded-md p-4 w-auto mx-5 shadow-lg md:w-auto xl:w-auto xl:ml-5 mb-auto'>
             <h1 className=' text-3xl text-center font-bold text-white '>Formulario</h1>
             {error && <p className=' grid text-red-700 font-bold justify-center my-2 '> Debes llenar todos los campos</p>}
-            <form className='container mx-2 text-yellow-100' onSubmit={validarFormulario}>
+            <form className='container mx-2 text-yellow-100 font-semibold' onSubmit={validarFormulario}>
                 <div>
                     <label htmlFor="nombrePaciente">Nombre Paciente </label>
                     <input type="text" id= 'nombre' className=' block w-full rounded-md text-gray-800 px-2' placeholder=' Nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />
@@ -84,7 +84,7 @@ export const Formulario = ({setPacientes, pacientes, paciente,setPaciente}) => {
                 </div>
                 <div>
                     <label htmlFor="email" >Correo </label>
-                    <input type="email" id= 'email' className='block w-full rounded-md text-gray-800' placeholder='Ingrese correo' value={correo} onChange={(e) => setCorreo (e.target.value)}/>
+                    <input type="email" id= 'email' className='block w-full rounded-md text-gray-800 px-2' placeholder='Ingrese correo' value={correo} onChange={(e) => setCorreo (e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="sintomas">Sintomas </label>
