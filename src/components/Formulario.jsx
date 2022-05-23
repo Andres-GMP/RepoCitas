@@ -73,9 +73,9 @@ export const Formulario = ({setPacientes, pacientes, paciente,setPaciente}) => {
     }
 
     return (
-        <div className='bg-zinc-900 rounded-md p-4 w-auto mx-5 shadow-lg md:w-auto xl:w-auto xl:ml-5 mb-auto'>
+        <div className='bg-gray-800 rounded-md p-4 w-auto mx-5 shadow-lg md:w-auto xl:w-auto xl:ml-5 mb-auto'>
             <h1 className=' text-3xl text-center font-bold text-white '>Formulario</h1>
-            {error && <p className=' grid text-red-700 font-bold justify-center my-2 '> Debes llenar todos los campos</p>}
+            {error && <p className=' grid text-red-600 font-semibold  justify-center my-2 '> Debes llenar todos los campos</p>}
             <form className='container mx-2 text-yellow-100 font-semibold' onSubmit={validarFormulario}>
                 <div>
                     <label htmlFor="nombrePaciente">Nombre Paciente </label>
