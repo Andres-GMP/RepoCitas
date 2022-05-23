@@ -95,7 +95,7 @@ export const Formulario = ({setPacientes, pacientes, paciente,setPaciente}) => {
                     <label htmlFor="date">Fecha </label>
                     <input type="date" name="date" id="date" className='px-2 block w-full rounded-md mb-10 text-gray-800' value={fecha} onChange={(e) => setFecha (e.target.value)} />
                 <span>
-                    <input type="submit" id='btn1' className= "bg-purple-800 rounded-md text-xl font-bold w-full hover:bg-purple-900 hover:cursor-pointer text-fuchsia-50 p-2"
+                    <input type="submit" id='btn1' className= "bg-purple-800 rounded-md text-xl font-bold w-full hover:bg-purple-900 hover:cursor-pointer text-fuchsia-50 p-2 "
                     value = {paciente.id ? 'Editar paciente': 'Agregar'}
                     />
                 </span>
